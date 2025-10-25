@@ -15,7 +15,7 @@ const Error = ({ error }: { error: Error }) => (
 export const Layout = ({ children }: { children: ReactNode }) => (
   <>
     {/* Fixed Pinger Logo */}
-    <div className="fixed top-4 left-4 z-50">
+    <div className="fixed top-4 left-4 z-50 flex items-center h-12">
       <span className="text-lg font-semibold text-white">Pinger</span>
     </div>
 
