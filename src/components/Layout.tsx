@@ -16,7 +16,7 @@ export const Layout = ({ children }: { children: ReactNode }) => (
   <>
     {/* Fixed Pinger Logo */}
     <div className="fixed top-4 left-4 z-50 flex items-center h-12">
-      <span className="text-lg font-semibold text-white">Pinger</span>
+      <span className="text-lg font-semibold text-white leading-none">Pinger</span>
     </div>
 
     <main
@@ -30,7 +30,7 @@ export const Layout = ({ children }: { children: ReactNode }) => (
         "has-[main.fixed-main]:group-data-[scroll-locked=1]/body:h-svh",
       )}
     >
-      <header className="flex h-16 md:h-12 shrink-0 items-center gap-2 px-4">
+      <header className="flex h-16 md:h-12 shrink-0 items-center gap-2 px-4 pt-4">
         <SidebarTrigger className="scale-125 sm:scale-100" />
         <div className="flex-1 flex items-center" id="breadcrumb" />
       </header>
