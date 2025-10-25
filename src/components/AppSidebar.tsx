@@ -11,7 +11,7 @@ import {
   SidebarMenuItem,
 } from "./ui/sidebar";
 import { useSidebar } from "./ui/sidebar-hooks";
-import { House, FolderOpen, Mail, Users, Shell } from "lucide-react";
+import { House, FolderOpen, Mail, Users } from "lucide-react";
 
 export function AppSidebar() {
   const { openMobile, setOpenMobile } = useSidebar();
@@ -24,19 +24,7 @@ export function AppSidebar() {
   return (
         <Sidebar variant="floating" collapsible="icon">
       <SidebarHeader>
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton
-              asChild
-              className="data-[slot=sidebar-menu-button]:!p-1.5"
-            >
-              <Link to="/">
-                <Shell className="!size-5" />
-                <span className="text-base font-semibold">Pinger</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
+        <div className="h-12" />
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
