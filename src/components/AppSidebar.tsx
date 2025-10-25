@@ -22,7 +22,7 @@ export function AppSidebar() {
   };
 
   return (
-        <Sidebar variant="floating" collapsible="icon">
+        <Sidebar variant="floating" collapsible="icon" className="sticky top-0">
       <SidebarHeader>
         <div className="h-12" />
       </SidebarHeader>
