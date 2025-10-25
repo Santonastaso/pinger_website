@@ -3,7 +3,6 @@ import type { ReactNode } from "react";
 import { Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { SidebarTrigger } from "./ui/sidebar";
-import { LayoutGrid } from "lucide-react";
 
 const Error = ({ error }: { error: Error }) => (
   <div className="p-4 text-red-500">
