@@ -42,7 +42,7 @@ export function AppSidebar() {
                 <SidebarMenuButton asChild isActive={!!useMatch({ path: "/projects", end: false })}>
                   <Link to="/projects" onClick={handleClick}>
                     <FolderOpen />
-                    Projects
+                    Progetti
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
@@ -50,7 +50,7 @@ export function AppSidebar() {
                 <SidebarMenuButton asChild isActive={!!useMatch({ path: "/contact", end: false })}>
                   <Link to="/contact" onClick={handleClick}>
                     <Mail />
-                    Contact
+                    Contatti
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
@@ -58,7 +58,7 @@ export function AppSidebar() {
                 <SidebarMenuButton asChild isActive={!!useMatch({ path: "/team", end: false })}>
                   <Link to="/team" onClick={handleClick}>
                     <Users />
-                    Team
+                    Squadra
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>

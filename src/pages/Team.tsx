@@ -12,23 +12,23 @@ const Team = () => {
     { 
       name: 'Giovanni Rossetto', 
       title: 'CEO',
-      description: 'Chief Executive Officer',
+      description: 'Amministratore Delegato',
       image: '/photo_giovanni.jpeg',
       linkedin: 'https://www.linkedin.com/in/giovanni-rossetto-515103200/'
     },
     { 
       name: 'Andrea Santonastaso', 
       title: 'CTO',
-      description: 'Chief Technology Officer',
+      description: 'Direttore Tecnologico',
       image: '/photo_andrea.jpeg',
       linkedin: 'https://www.linkedin.com/in/andrea-santonastaso/'
     },
   ];
 
   const stats = [
-    { icon: Users, value: "10+", label: "Years Experience" },
-    { icon: Award, value: "50+", label: "Projects Delivered" },
-    { icon: Target, value: "100%", label: "Client Satisfaction" }
+    { icon: Users, value: "10+", label: "Anni di Esperienza" },
+    { icon: Award, value: "50+", label: "Progetti Consegnati" },
+    { icon: Target, value: "100%", label: "Soddisfazione Clienti" }
   ];
 
   return (
@@ -43,7 +43,7 @@ const Team = () => {
       <div className={`relative z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center mb-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
-            Team
+            Squadra
           </h1>
           <div className="h-0.5 w-20 bg-white mx-auto rounded-full mt-4 animate-scale-in animate-delay-200"></div>
         </div>

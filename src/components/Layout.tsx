@@ -18,7 +18,7 @@ export const Layout = ({ children }: { children: ReactNode }) => (
         <div className="flex items-center pl-2">
           <span className="text-4xl font-bold leading-none">Pinger</span>
         </div>
-        <SidebarTrigger className="text-base font-normal hover:scale-110 transition-transform duration-200 flex items-center justify-center" />
+        <SidebarTrigger className="text-base font-normal hover:scale-110 transition-transform duration-200 flex items-center justify-center translate-y-1" />
         <div className="flex-1 flex items-center" id="breadcrumb" />
       </header>
 

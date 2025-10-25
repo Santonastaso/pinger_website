@@ -10,10 +10,10 @@ const Home = () => {
   }, []);
 
   const features = [
-    { icon: Code, title: "Custom Development", description: "Tailored solutions for your business needs" },
-    { icon: Database, title: "Data Management", description: "Advanced systems for data organization" },
-    { icon: Zap, title: "Performance", description: "Lightning-fast and optimized applications" },
-    { icon: Shield, title: "Security", description: "Enterprise-grade security and reliability" }
+    { icon: Code, title: "Sviluppo Personalizzato", description: "Soluzioni su misura per le tue esigenze aziendali" },
+    { icon: Database, title: "Gestione Dati", description: "Sistemi avanzati per l'organizzazione dei dati" },
+    { icon: Zap, title: "Prestazioni", description: "Applicazioni veloci e ottimizzate" },
+    { icon: Shield, title: "Sicurezza", description: "Sicurezza e affidabilità di livello enterprise" }
   ];
 
   return (
@@ -29,7 +29,7 @@ const Home = () => {
         <div className={`text-center max-w-4xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="mb-8">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-              Welcome
+              Benvenuto
             </h1>
             <div className="h-0.5 w-24 bg-white mx-auto rounded-full animate-scale-in animate-delay-200"></div>
           </div>
@@ -53,7 +53,7 @@ const Home = () => {
         {/* Call to action */}
         <div className="mt-16 animate-fade-in-up animate-delay-500">
           <button className="px-8 py-3 bg-white hover:bg-white/90 rounded-lg text-black font-medium text-lg transition-all duration-300 hover:scale-105">
-            Get Started
+            Inizia Ora
           </button>
         </div>
       </div>

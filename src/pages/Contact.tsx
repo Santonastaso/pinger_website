@@ -18,21 +18,21 @@ const Contact = () => {
       delay: 0.1
     },
     {
-      title: "Phone",
+      title: "Telefono",
       description: "+39 3318881201",
       icon: Phone,
       href: "tel:+393318881201",
       delay: 0.2
     },
     {
-      title: "Location",
-      description: "Italy",
+      title: "Posizione",
+      description: "Italia",
       icon: MapPin,
       delay: 0.3
     },
     {
-      title: "Response Time",
-      description: "Within 24 hours",
+      title: "Tempo di Risposta",
+      description: "Entro 24 ore",
       icon: Clock,
       delay: 0.4
     }
@@ -50,7 +50,7 @@ const Contact = () => {
       <div className={`relative z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center mb-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
-            Contact
+            Contatti
           </h1>
           <div className="h-0.5 w-20 bg-white mx-auto rounded-full mt-4 animate-scale-in animate-delay-200"></div>
         </div>
@@ -76,18 +76,18 @@ const Contact = () => {
         <div className="animate-fade-in-up animate-delay-500">
           <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10">
             <div className="text-center mb-6">
-              <h2 className="text-xl font-bold text-white mb-2">Send us a Message</h2>
-              <p className="text-muted-foreground text-sm">We'll get back to you as soon as possible</p>
+              <h2 className="text-xl font-bold text-white mb-2">Inviaci un Messaggio</h2>
+              <p className="text-muted-foreground text-sm">Ti risponderemo il prima possibile</p>
             </div>
             
             <form className="space-y-4">
               <div className="grid grid-cols-1 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-white mb-1">Name</label>
+                  <label className="block text-sm font-medium text-white mb-1">Nome</label>
                   <input 
                     type="text" 
                     className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-300"
-                    placeholder="Your name"
+                    placeholder="Il tuo nome"
                   />
                 </div>
                 <div>
@@ -95,26 +95,26 @@ const Contact = () => {
                   <input 
                     type="email" 
                     className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-300"
-                    placeholder="your@email.com"
+                    placeholder="tua@email.com"
                   />
                 </div>
               </div>
               
               <div>
-                <label className="block text-sm font-medium text-white mb-1">Subject</label>
+                <label className="block text-sm font-medium text-white mb-1">Oggetto</label>
                 <input 
                   type="text" 
-                  className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent transition-all duration-300"
-                  placeholder="What's this about?"
+                  className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-300"
+                  placeholder="Di cosa si tratta?"
                 />
               </div>
               
               <div>
-                <label className="block text-sm font-medium text-white mb-1">Message</label>
+                <label className="block text-sm font-medium text-white mb-1">Messaggio</label>
                 <textarea 
                   rows={3}
-                  className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent transition-all duration-300 resize-none"
-                  placeholder="Tell us about your project..."
+                  className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-300 resize-none"
+                  placeholder="Raccontaci del tuo progetto..."
                 ></textarea>
               </div>
               
@@ -123,7 +123,7 @@ const Contact = () => {
                 className="w-full px-6 py-2 bg-white hover:bg-white/90 rounded-lg text-black font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
               >
                 <Send className="w-4 h-4" />
-                Send Message
+                Invia Messaggio
               </button>
             </form>
           </div>
