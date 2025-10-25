@@ -7,14 +7,14 @@ const Team = () => {
       name: 'Giovanni Rossetto', 
       title: 'CEO',
       description: 'Chief Executive Officer',
-      image: '/photo_giovanni.jpeg',
+      image: '/pinger_website/photo_giovanni.jpeg',
       linkedin: 'https://www.linkedin.com/in/giovanni-rossetto-515103200/'
     },
     { 
       name: 'Andrea Santonastaso', 
       title: 'CTO',
       description: 'Chief Technology Officer',
-      image: '/photo_andrea.jpeg',
+      image: '/pinger_website/photo_andrea.jpeg',
       linkedin: 'https://www.linkedin.com/in/andrea-santonastaso/'
     },
   ];
