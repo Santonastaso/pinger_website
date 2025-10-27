@@ -22,8 +22,8 @@ const Team = () => {
   ];
 
   const stats = [
-    { icon: Users, value: "10+", label: "Anni di Esperienza" },
-    { icon: Award, value: "50+", label: "Progetti Consegnati" },
+    { icon: Users, value: "3+", label: "Anni di Esperienza" },
+    { icon: Award, value: "10+", label: "Progetti Consegnati" },
     { icon: Target, value: "100%", label: "Soddisfazione Clienti" }
   ];
 
