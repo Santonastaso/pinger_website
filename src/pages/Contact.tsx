@@ -15,9 +15,9 @@ const Contact = () => {
     },
     {
       title: "Telefono",
-      description: "+39 3318881201",
+      description: "++39 3459779710",
       icon: Phone,
-      href: "tel:+393318881201",
+      href: "tel:+393459779710",
       delay: 0.2
     },
     {
