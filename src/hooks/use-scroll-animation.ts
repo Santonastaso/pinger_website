@@ -13,8 +13,7 @@ export const useScrollAnimation = (options: UseScrollAnimationOptions = {}) => {
     threshold = 0.1,
     rootMargin = '0px 0px -50px 0px',
     triggerOnce = false,
-    fadeInDistance = 50,
-    fadeOutDistance = 50
+    fadeInDistance = 50
   } = options;
 
   const [isVisible, setIsVisible] = useState(false);
@@ -34,12 +33,6 @@ export const useScrollAnimation = (options: UseScrollAnimationOptions = {}) => {
         const elementTop = rect.top;
         const elementHeight = rect.height;
         const viewportCenter = windowHeight / 2;
-        
-        // Calculate how much of the element is visible
-        const visibleTop = Math.max(0, -elementTop);
-        const visibleBottom = Math.min(elementHeight, windowHeight - elementTop);
-        const visibleHeight = Math.max(0, visibleBottom - visibleTop);
-        const visibilityRatio = visibleHeight / elementHeight;
         
         // Calculate scroll progress (0 = element entering from bottom, 1 = element leaving from top)
         const progress = Math.max(0, Math.min(1, 

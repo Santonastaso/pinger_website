@@ -29,7 +29,7 @@ export const ScrollAnimated: React.FC<ScrollAnimatedProps> = ({
 
   return (
     <div
-      ref={elementRef}
+      ref={elementRef as React.RefObject<HTMLDivElement>}
       className={className}
       style={{
         opacity,
