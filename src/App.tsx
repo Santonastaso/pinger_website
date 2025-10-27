@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { SidebarProvider } from "./components/ui/sidebar";
 import { AppSidebar } from "./components/AppSidebar";
 import { Layout } from "./components/Layout";
@@ -16,19 +15,25 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <SidebarProvider>
-        <AppSidebar />
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/team" element={<Team />} />
-          </Routes>
-        </Layout>
-      </SidebarProvider>
-    </Router>
+    <SidebarProvider>
+      <AppSidebar />
+      <Layout>
+        <div className="w-full">
+          <section id="home" className="min-h-screen">
+            <Home />
+          </section>
+          <section id="projects" className="min-h-screen">
+            <Projects />
+          </section>
+          <section id="team" className="min-h-screen">
+            <Team />
+          </section>
+          <section id="contact" className="min-h-screen">
+            <Contact />
+          </section>
+        </div>
+      </Layout>
+    </SidebarProvider>
   );
 };
 

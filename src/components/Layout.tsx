@@ -29,15 +29,13 @@ export const Layout = ({ children }: { children: ReactNode }) => (
         "peer-data-[state=collapsed]:w-[calc(100%-var(--sidebar-width-icon)-1rem)]",
         "peer-data-[state=expanded]:w-[calc(100%-var(--sidebar-width))]",
         "sm:transition-[width] sm:duration-200 sm:ease-linear",
-        "flex h-svh flex-col",
-        "group-data-[scroll-locked=1]/body:h-full",
-        "has-[main.fixed-main]:group-data-[scroll-locked=1]/body:h-svh",
+        "min-h-screen",
       )}
     >
-      <div className="flex flex-1 flex-col px-4 py-6 overflow-y-auto">
+      <div className="w-full">
         <ErrorBoundary FallbackComponent={Error}>
           <Suspense fallback={
-            <div className="flex items-center justify-center h-full">
+            <div className="flex items-center justify-center h-screen">
               <div className="flex flex-col items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-white/20 animate-pulse"></div>
                 <div className="text-muted-foreground">Loading...</div>
