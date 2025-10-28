@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, Users, MapPin, Plus, ExternalLink, BarChart3, Activity, Zap, Database } from 'lucide-react';
+import { Users, ExternalLink } from 'lucide-react';
 
 interface ProjectShowcaseProps {
   project: {

@@ -23,14 +23,13 @@ export const SparklineChart: React.FC<SparklineChartProps> = ({
   unit = "",
   color = "#3b82f6",
   height = 120,
-  showTrend = true,
+  showTrend: _showTrend = true,
   className = ""
 }) => {
   const [currentValue, setCurrentValue] = useState<number>(0);
   const [trend, setTrend] = useState<'up' | 'down' | 'stable'>('stable');
   const [isAnimating, setIsAnimating] = useState(false);
   const svgRef = useRef<SVGSVGElement>(null);
-  const animationRef = useRef<number>();
 
   useEffect(() => {
     if (data.length > 0) {

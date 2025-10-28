@@ -139,7 +139,7 @@ export const GanttChart: React.FC<GanttChartProps> = ({
 
         {/* Tasks */}
         <div className="space-y-2">
-          {tasks.map((task, index) => (
+          {tasks.map((task) => (
             <div
               key={task.id}
               className="flex items-center group cursor-pointer"

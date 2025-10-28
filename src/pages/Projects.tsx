@@ -1,5 +1,5 @@
 import { ScrollAnimated } from '../components/ui/scroll-animated';
-import { Calendar, Users, MapPin, Plus, ExternalLink } from 'lucide-react';
+import { Calendar, Users, MapPin, Plus } from 'lucide-react';
 import ProjectShowcase from '../components/ui/project-showcase';
 
 const Projects = () => {

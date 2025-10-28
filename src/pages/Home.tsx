@@ -1,6 +1,5 @@
 import { Code, Database, Zap, Shield } from 'lucide-react';
 import { ScrollAnimated } from '../components/ui/scroll-animated';
-import { ParticleText } from '../components/ui/particle-text';
 import { InteractiveParticles } from '../components/ui/interactive-particles';
 
 const Home = () => {
