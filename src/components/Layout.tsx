@@ -25,7 +25,7 @@ export const Layout = ({ children }: { children: ReactNode }) => (
     {/* Main content area with top padding to account for fixed header */}
     <main
       className={cn(
-        "ml-auto w-full max-w-full pt-16 md:pt-12",
+        "ml-auto w-full max-w-full pt-16 md:pt-12 relative z-10",
         "peer-data-[state=collapsed]:w-[calc(100%-var(--sidebar-width-icon)-1rem)]",
         "peer-data-[state=expanded]:w-[calc(100%-var(--sidebar-width))]",
         "sm:transition-[width] sm:duration-200 sm:ease-linear",

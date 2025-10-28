@@ -1,6 +1,5 @@
 import { Linkedin, Award, Users, Target } from 'lucide-react';
 import { ScrollAnimated } from '../components/ui/scroll-animated';
-import { AnimatedBackground } from '../components/ui/animated-background';
 
 const Team = () => {
 
@@ -28,46 +27,40 @@ const Team = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen space-y-12 relative py-20">
-      <AnimatedBackground variant="section" />
-
+    <div className="w-full min-h-screen space-y-12 py-20 px-4 relative z-50">
       {/* Header */}
       <ScrollAnimated fadeInDistance={60} delay={0}>
-        <div className="relative z-10">
-          <div className="text-center mb-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-white">
-              Squadra
-            </h1>
-            <div className="h-0.5 w-20 bg-white mx-auto rounded-full mt-4"></div>
-          </div>
+        <div className="text-center mb-8">
+          <h1 className="text-5xl md:text-6xl font-bold text-gradient mb-6">
+            Squadra
+          </h1>
+          <div className="h-1 w-24 bg-gradient-to-r from-white via-slate-300 to-white mx-auto rounded-full"></div>
         </div>
       </ScrollAnimated>
 
       {/* Stats Section */}
       <ScrollAnimated fadeInDistance={50} delay={200}>
-        <div className="relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center group animate-fade-in-up" style={{ animationDelay: `${0.3 + (index * 0.1)}s` }}>
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/20 mb-4 group-hover:bg-white/30 transition-all duration-300">
-                  <stat.icon className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-3xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
-                  {stat.value}
-                </div>
-                <div className="text-muted-foreground">{stat.label}</div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+          {stats.map((stat, index) => (
+            <div key={index} className="text-center group smooth-fade-in" style={{ animationDelay: `${0.3 + (index * 0.1)}s` }}>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/20 mb-4 group-hover:bg-white/30 transition-all duration-300 pulse-ring">
+                <stat.icon className="w-8 h-8 text-white" />
               </div>
-            ))}
-          </div>
+              <div className="text-3xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
+                {stat.value}
+              </div>
+              <div className="text-slate-300">{stat.label}</div>
+            </div>
+          ))}
         </div>
       </ScrollAnimated>
       
       {/* Team Members */}
       <ScrollAnimated fadeInDistance={50} delay={400}>
-        <div className="relative z-10 w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {teamMembers.map((member, index) => (
-            <div key={index} className="group relative animate-fade-in-up" style={{ animationDelay: `${0.6 + (index * 0.2)}s` }}>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+            <div key={index} className="group relative smooth-fade-in" style={{ animationDelay: `${0.6 + (index * 0.2)}s` }}>
+              <div className="glass-morphism-strong rounded-2xl p-6 card-hover">
                 {/* Profile Image */}
                 <div className="flex items-start gap-4 mb-4">
                   <div className="relative">
@@ -103,8 +96,8 @@ const Team = () => {
                   </div>
                 </div>
                 
-                {/* Subtle hover indicator */}
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-b-lg"></div>
+                {/* Professional bottom indicator */}
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-white to-slate-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-b-2xl"></div>
               </div>
             </div>
           ))}

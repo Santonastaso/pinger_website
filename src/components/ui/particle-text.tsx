@@ -22,31 +22,20 @@ export const ParticleText: React.FC<ParticleTextProps> = ({
   }, [delay]);
 
   return (
-    <div className={`relative ${className}`}>
-      {/* Background particles */}
-      <div className="absolute inset-0 pointer-events-none">
-        {Array.from({ length: 50 }).map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-white/20 rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 2}s`,
-              animationDuration: `${2 + Math.random() * 3}s`
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Main text with particle effect */}
-      <div className="relative z-10">
+    <div className={`relative z-50 ${className}`}>
+      {/* Main text with Pixar-style letter squashing */}
+      <div className="relative z-50">
         {text.split('').map((char, index) => (
           <span
             key={index}
-            className={`particle-letter ${isAnimating ? 'text-reveal' : 'opacity-0'}`}
+            className={`inline-block transition-all duration-300 ${
+              isAnimating ? 'opacity-100' : 'opacity-0'
+            }`}
             style={{
-              animationDelay: isAnimating ? `${index * 0.1}s` : 'none'
+              animationDelay: isAnimating ? `${delay + (index * 0.08)}s` : 'none',
+              animationDuration: '0.8s',
+              animationFillMode: 'both',
+              animationName: isAnimating ? 'letter-squash' : 'none'
             }}
           >
             {char === ' ' ? '\u00A0' : char}

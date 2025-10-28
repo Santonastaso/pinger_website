@@ -56,7 +56,7 @@ export function AppSidebar() {
   }, []);
 
   return (
-        <Sidebar variant="floating" collapsible="icon" className="sticky top-0">
+        <Sidebar variant="floating" collapsible="icon" className="sticky top-0 z-40">
       <SidebarHeader>
         <div className="h-12" />
       </SidebarHeader>
