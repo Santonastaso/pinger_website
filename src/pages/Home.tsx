@@ -12,7 +12,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-center px-4 py-20 relative z-50">
+    <div className="w-full min-h-screen flex flex-col items-center justify-start px-4 pt-8 relative z-50">
         {/* Main hero content */}
         <ScrollAnimated fadeInDistance={60} delay={0}>
           <div className="text-center max-w-4xl mx-auto">
@@ -27,7 +27,7 @@ const Home = () => {
 
         {/* Feature cards */}
         <ScrollAnimated fadeInDistance={50} delay={200}>
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto w-full">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto w-full">
             {features.map((feature, index) => (
               <InteractiveParticles key={index} particleCount={8}>
                 <div
@@ -58,7 +58,7 @@ const Home = () => {
 
         {/* Call to action */}
         <ScrollAnimated fadeInDistance={50} delay={600}>
-          <div className="mt-20">
+          <div className="mt-12">
             <InteractiveParticles particleCount={16}>
               <button 
                 onClick={() => {
